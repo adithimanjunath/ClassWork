@@ -1,0 +1,32 @@
+.content{
+    border: 10px solid black;
+    width: auto;
+    padding: 10px;
+    margin: 20px;
+}
+
+.box_different_padding{
+    margin: 20px;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.box_short_padding{
+    margin: 20px;
+    border: 3px solid black;
+    padding: 10px 20px 30px 40px;
+}
+
+.parent{
+    border: 1px solid black;
+    margin: 50px;
+    padding: 5px;
+
+}
+
+.child{
+    margin: 20px;
+}
