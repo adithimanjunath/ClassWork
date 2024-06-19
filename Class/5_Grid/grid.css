@@ -1,0 +1,41 @@
+body{
+    margin: 20px;
+}
+
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+
+
+.wrapper{
+    height: 50vh;
+    display: grid;
+    /* grid-template-columns: 20% 20% 20%;
+    grid-auto-columns: 20%;
+    grid-template-rows: 50px 50px;
+    grid-auto-rows: 50px; */
+    grid-gap: 20px;
+    grid-template-areas: " a b b " "a c d " "a f e" ;
+
+}
+.box{
+    background-color: black;
+    color: wheat;
+    padding: 20px;
+    border-radius: 5px;
+}
