@@ -1,0 +1,61 @@
+input[required]{
+    border: 2px solid red;
+}
+
+input[type="text"]{
+    background-color: blanchedalmond;
+}
+/*starts with*/
+a[href^="https"]{
+    color: green;
+}
+/*ends with*/
+a[href$=".pdf"]{
+    color: black;
+}
+/*sub string*/
+a[href*="google"]{
+    color:brown
+}
+
+/*child selecctors*/
+ul > li {
+    list-style-type: square;
+}
+
+div > p{
+    color: red;
+}
+
+/*sibling selecctors, + and ~ both can be used */
+h3 + p{
+  margin-top: 0;
+  font-weight: bold;
+  color: brown;
+}
+/*pseudo class*/
+input:focus{
+    border: 2px solid blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input:checked{
+    background-color: yellowgreen;
+}
+
+.hover-example:hover{
+    background-color: aquamarine;
+}
+
+p:lang(en){
+    font-style: italic;
+}
+
+/*Structural pseudo class*/
+
+ul li:nth-child(2){
+    color: chocolate;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors and Pseudo Classes </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Advanced Selectors and Pseudo Classes</h1>
+    <section>
+        <h2>Attribute Selectors</h2>
+        <input type="text" placeholder="type here.." required/>
+        <input type="password" placeholder="password" />
+        <a href="https://www.google.com">Example link 1</a>
+        <a href="https://www.googl1e.com/doc.pdf">Example link 2</a>
+    </section>
+
+    <section>
+     <h2>Child Selectors</h2>
+     <ul>
+        <li>1st item</li>
+        <li>2nd item</li>
+        <li>3rd item</li>
+     </ul>
+     <div>
+       <p>direct child para</p>
+       <p>another child para</p>
+       <span>Direct child span</span>
+     </div>
+    </section>
+
+    <section>
+        <h1>Sibling selectors</h1>
+        <h3>Heading 3</h3>
+        <p>Paragraph following h3</p>
+        <h3> heading 3</h3>
+        <p>another paragraph following h3</p>
+    </section>
+
+    <section>
+        <h2>Pseudo Classes</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name"></label>
+            <input type="checkbox" id="subscribe" name="subscribe"></label>
+            <label for="subscribe"> Subscribe</label>
+        </form>
+        <p class="hover-example">Hover over me</p>
+        <button class="active-example">Click Me!</button>
+        <p lang="en">This is in English</p>
+        <p lang="fr">This is in French</p>
+    </section>
+</body>
+</html>
