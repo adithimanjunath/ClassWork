@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: bisque;
+    color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*background color transition*/
+.background-color:hover{
+    background-color: lightslategray;
+} 
+.background-color{
+    transition: background-color 1s ease;
+}
+
+.width:hover{
+    width: 200px;
+} 
+.width{
+    transition: width 2s ease;
+    width: 150px;
+}
+
+.transform:hover{
+    transform: rotate(10deg) scale(1.1);
+}
+.transform{
+    transition: transform 2s ease;
+}
