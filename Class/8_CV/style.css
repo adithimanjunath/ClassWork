@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Courier , monospace;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+    box-shadow: 0px 35px 55px rgba(0,0,0,0.2);
+}
+.left_Side{
+    background-color: #163147
+}
+
+.profileText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.profileText .imgBx{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: aliceblue;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-weight: 300;
+    font-size:0.8em;
+}
+
+.contactInfo{
+    margin-top: 40px;
+}
+
+.contactInfo ul li span{
+    color: #ffff;
+    font-weight: 300;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.contactInfo ul li{
+    list-style: none;
+    margin-top: 10px 0px;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    width:30px;
+    font-size: 20px;
+    color: #03a9f4;
+
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.education ul li{
+    margin-bottom: 15px
+}
+.education ul li h5{
+    color: #03a9f4;
+    font-weight: 600;
+}
+
+.education ul li h4:nth-child(3){
+    font-weight: 500;
+    color: #fff;
+}
+.education ul li h4{
+    color: #fff;
+    font-weight: 400;
+}
+
+.title1{
+    color: #060101;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+}
+
+.Experience {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.Experience h3 {
+    text-align: left;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.exp_left {
+    width: 40%;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 3px;
+}
+
+.exp_right {
+    width: 70%;
+}
+
+.exp_left .date,
+.exp_left .company {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.exp_right h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.exp_right p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
