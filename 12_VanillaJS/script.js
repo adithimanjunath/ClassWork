@@ -68,6 +68,50 @@ document.addEventListener("DOMContentLoaded", () => {
       const nameInputValue = document.getElementById("nameInput").value;
       formResponse.textContent = nameInputValue;
     })
+
+    //add element
+    const newElementInput = document.getElementById("newElementInput");
+    const addElementBtn = document.getElementById("addElementBtn");
+    const elementList = document.getElementById("elementList");
+
+    // addElementBtn.addEventListener("click", () => {
+    //   const newElement = document.createElement("p");
+    //   newElement.textContent = newElementInput.value;
+    //   elementList.appendChild(newElement);
+    // });
+    addElementBtn.addEventListener("click", () => { 
+        const newText=newElementInput.value;
+        if(newText.trim()!==""){
+            const newElement = document.createElement("p");
+            newElement.textContent = newText;
+            elementList.appendChild(newElement);
+            newElementInput.value = "";
+        }});
+
+    //add and remove elements
+    const parentElement = document.getElementById("parentElement");
+    const childElement = document.getElementById("childElement");
+    const addChildBtn = document.getElementById("addChildBtn");
+    const removeChildBtn = document.getElementById("removeChildBtn");
+
+    addChildBtn.addEventListener("click", () => {
+        const newChild= document.createElement("p");
+        newChild.textContent = "New Child Added dynamically";
+        parentElement.appendChild(newChild);
+    });
+
+    removeChildBtn.addEventListener("click", () => {
+        const lastChild= parentElement.lastElementChild;
+        if(lastChild){
+            parentElement.removeChild(lastChild);
+        }
+    });
+
+
+
+    
+
+
   });
    
    
