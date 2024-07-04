@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <Link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+    <h1 id="header">Mini Interaction Playground</h1>
+ 
+    <!-- changing the text -->
+    <section>
+        <h2>Changing the text</h2>
+        <button id="changeTextBtn">Change Text</button>
+        <p id="textContent">This is some text</p>
+    </section>
+ 
+    <!-- Show/Hide element -->
+    <section>
+        <h2>Show/Hide element</h2>
+        <button id="toggleBtn">Show/Hide</button>
+        <div id="toggleContent" class="hidden">This Content is hidden</div>
+    </section>
+ 
+    <!-- Changing CSS styles -->
+    <section>
+        <h2>Change Style</h2>
+        <button id="changeStyleBtn">Change!</button>
+        <div id="styleContent">hehe</div>
+    </section>
+ 
+    <!-- Mouse Events -->
+    <section>
+        <h2>Mouse Event</h2>
+        <button id="mouseEventBox">Hover Over Me</button>
+        <p id="mouseEventText">Mouse Event Will displayed here.</p>
+    </section>
+   
+    <!-- Keyboard Events -->
+    <section>
+        <h2>Keyboard Event</h2>
+        <input type="text" id="keyboardInput" placeholder="Type Something Cool">
+        <p id="keyboardEventText">That Cool Something will show here.</p>
+    </section>
+ 
+    <!-- Form Handling -->
+    <section>
+        <h2>Form Handling</h2>
+        <form id="sampleForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formResponse">Your name will show here.</p>
+    </section>
+    </div>
+ 
+ 
+    <script src="script.js"></script>
+</body>
+</html>
