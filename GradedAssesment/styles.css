@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 200px;
+    background-color: #120a0a;
+    padding: 55px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.display {
+    grid-column: span 4;
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: gray;
+    color: #fff;
+    border: 1px solid rgb(99, 98, 98);
+    padding: 20px;
+    font-size:20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(99, 98, 98);
+}
+
+.button.clearBtn {
+    background-color: red;
+}
+
+.button.clearBtn:hover {
+    background-color: rgb(195, 5, 5);
+}
+
+.button.equalBtn {
+    background-color: green;
+}
+
+.button.equalBtn:hover {
+    background-color: rgb(2, 88, 2);
+}
+.history {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.historyBtn {
+    padding: 10px 30px;
+    font-size: 1em;
+    border: none;
+    background: #c9dd91;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 2px 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+#history-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+#history-list li {
+    margin: 20px auto;
+}
